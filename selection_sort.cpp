@@ -11,7 +11,11 @@ int main () {
                 index=j;
             }
         }
-        swap(arr[i],arr[index]);
+        if (i!=index) {
+    arr[i]=arr[i] + arr [index];
+    arr[index]=arr[i] - arr [index];
+    arr[i]=arr[i] - arr[index];
+        }
     }
 
     for (int i=0;i<5;i++) {
